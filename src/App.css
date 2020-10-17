@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+.app {
+    height: 100vh;
+    padding: 30px;
+    text-align: center;
+    position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app > p {
+    color: #ccc;
+    font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+    display: flex;
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 9px 13px;
+    cursor: pointer;
+    margin: 10px 10px 10px 0;
+    border-radius: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn:hover {
+    background-color: RoyalBlue;
 }
 
-.App-link {
-  color: #61dafb;
+.close-icon {
+    color: red;
+    font-size: 16px !important;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-list {
+    max-width: 500px;
+    margin: 0 auto;
 }
+
+.todo {
+    align-items: center;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.add-item-form input {
+    margin-bottom: 10px;
+}
+
+
